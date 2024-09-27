@@ -1,0 +1,97 @@
+.accordion-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 500ms;
+  }
+  
+  .accordion-content[aria-hidden="false"] {
+    grid-template-rows: 1fr;
+  }
+  
+  .accordion-content > div {
+    overflow: hidden;
+  }
+  
+  body {
+    font-family: system-ui;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  .wrapper {
+    width: min(65ch, 100% - 4rem);
+    margin-inline: auto;
+  }
+  
+  .accordion {
+    background: #F5F5DC;
+    color: var(--nuance-foncee-texte);
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-top: .5rem;
+  }
+  
+  .accordion-panel {
+    padding: 1rem;
+    border: 1px solid;
+  }
+  
+  .accordion h2 {
+    position: relative;
+  }
+
+  .accordion h2:hover{
+    color: var(--nuance-pale-foncee);
+  }
+  
+  .accordion-trigger {
+    background: transparent;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  .accordion-trigger::before,
+  .accordion-trigger::after {
+    position: absolute;
+    right: 1em;
+    content: "";
+    display: block;
+    margin-top: .5em;
+    width: 1em;
+    height: 5px;
+    background: currentcolor;
+    transition: transform 500ms;
+  }
+  
+  .accordion-trigger::after {
+    rotate: 90deg;
+    translate: 0 -1.1em;
+  }
+  
+  .accordion-trigger[aria-expanded="true"]::before,
+  .accordion-trigger[aria-expanded="true"]::after {
+    transform: rotate(45deg);
+  }
+  
+  /* Styles pour la table des mises */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: var(--nuance-foncee-texte);
+    color: white;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  

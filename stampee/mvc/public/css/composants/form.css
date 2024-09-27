@@ -1,0 +1,154 @@
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    min-height: 100vh;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 80px;
+    height: auto;
+}
+
+.text-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.text-logo h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    color: #422B1E;
+    margin: 0;
+    font-weight: bold;
+}
+
+.text-logo hr {
+    width: 100%;
+    border: none;
+    border-top: 2px solid #422B1E;
+    margin: 5px 0;
+}
+
+.text-logo p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #6A4528;
+    margin: 0;
+}
+
+
+.user-role {
+    display: flex;
+    margin: 25px;
+    letter-spacing: .5px;
+    height: 60px;
+    border-radius: 30px;
+    border: 2px solid rgb(48, 10, 10);
+    align-items: center;
+    overflow: hidden; 
+}
+
+.user-role a {
+    padding: 15px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #422B1E;
+}
+
+.user-role a:hover {
+    text-decoration: underline 1px;
+}
+
+.user-role .active {
+    background-color: #926938;
+    border-radius: 30px 0px 0px 30px;
+    padding: 15px 15px;
+    color: #FCE6BF;
+}
+
+.user-role .active-admin {
+    background-color: #926938;
+    border-radius: 0px 30px 30px 0px;
+    padding: 15px 15px;
+    color: #FCE6BF;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    background-color: #F5F5DC;
+    border: 2px solid #422B1E;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #422B1E;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #422B1E;
+    width: 100%;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #8B5E34;
+    color: #FFF;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #6A4528;
+}
+
+.lien-inscription {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #422B1E;
+}
+
+.lien-inscription a {
+    text-decoration: none;
+    color: #8B5E34;
+}
+
+.lien-inscription a:hover {
+    text-decoration: underline;
+}
